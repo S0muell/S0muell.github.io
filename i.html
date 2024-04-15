@@ -61,8 +61,8 @@
             100% { transform: scale(0); opacity: 0; }
         }
         #signature {
-            position: absolute;
-            bottom: 10px;
+            position: fixed;
+            top: 10px;
             right: 10px;
             font-size: 1.2em;
             color: #fff;
@@ -112,7 +112,6 @@
     <div id="signature" class="animate__animated animate__pulse animate__infinite">By Samuel</div>
     <script>
         const words = Array.from({length: 20}, () => "Melissa"); // Aparecerá "Melissa" 20 veces
-
         // Calcula el ancho y alto de la ventana
         const windowWidth = window.innerWidth;
         const windowHeight = window.innerHeight;
